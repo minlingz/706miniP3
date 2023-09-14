@@ -11,6 +11,7 @@ data = data.with_columns(data["gdppcap08"].cast(pl.Int32))
 summary = data.select(["gdppcap08", "polityIV"]).describe()
 print(summary)
 
+# plot "gdppcap08" & "polityIV" using plotly.express
 fig = px.scatter(data, x="gdppcap08", y="polityIV")
 fig.show()
 fig.write_image("plot.png")
