@@ -1,4 +1,4 @@
-# Pandas Descriptive Statistics Script
+# Polars Descriptive Statistics Script
 
 ## Files
 
